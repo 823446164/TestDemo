@@ -54,8 +54,9 @@ public class ElementList {
     * 给过申请员工发送邮件
     * */
     public void sendBlessing(Element element){
-        //创建一个发送邮件实体类
+
         if(element!=null){
+            //创建一个发送邮件实体类
             SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
             simpleMailMessage.setSubject("生日邮件");
             simpleMailMessage.setText("亲爱的"+element.getName()+"先生！祝您生日快乐，身体健康！");
@@ -84,14 +85,4 @@ public class ElementList {
         return list;
     }
 
-//    public static void main(String[] args) {
-//        String filePath = "/Users/xiangdongliang/Downloads/demo/src/main/resources/employeeInfo";
-//        List<Element> elementList = getElementList(filePath);
-//        if (elementList.size() > 0){
-//            elementList.forEach(i->{
-//                sendBlessing(i);
-//            });
-//        }
-//
-//    }
 }
