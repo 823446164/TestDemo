@@ -1,0 +1,12 @@
+spring:
+  mail:
+    username: 823446164@qq.com
+    password: bixrrwpeusrmbcgf
+    host: smtp.qq.com
+    #开启加密验证
+    port: 465
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
